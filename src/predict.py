@@ -30,6 +30,7 @@ def display_results(probability):
     print("==================================")
     print("       AI PHISHING DETECTOR       ")
     print("==================================")
+    print()
 
     confidence = probability[0][1] * 100
 
@@ -56,3 +57,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
