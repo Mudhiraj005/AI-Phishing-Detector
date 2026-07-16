@@ -1,9 +1,16 @@
+
 import pandas as pd
 import joblib
 
 model = joblib.load("models/phishing_model.pkl")
 
 def get_user_input():
+    print("==================================")
+    print("NOTE: v1.0 accepts only manually entered")
+    print("feature values (0/1).")
+    print("Real email analysis will be added")
+    print("in future versions.")
+    print("==================================")
     return {
         "Urgency": int(input("Enter Urgency (0/1):")),
         "FakeLink": int(input("Enter Fake Link (0/1):")),
